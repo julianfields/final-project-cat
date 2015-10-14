@@ -15,11 +15,11 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/main.css">
 
     <!-- Latest compiled and minified JavaScript -->
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -28,64 +28,95 @@
     
   </head>
 
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 col-offset-4">
-          <h1>Donate A Cat</h1>
-        </div>
-      </div>
-      
-      <form class="form-inline">
+  <body>
+    <section class="grey">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6 form-group">
-            <label for="name">Your Name*
-            <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </label>
+          <div class="col-md-12">
+            <h2 class="text-center">Donate A Cat</h2>
           </div>
-          <div class="col-md-6 form-group">
-            <label for="Email">Email*
-            <input type="email" class="form-control" id="email" placeholder="Email">
-            </label>
-          </div>
-          <div class="col-md-6 form-group">
-            <label for="Your Phone">Your Phone*
-            <input type="text" class="form-control" id="your phone" placeholder="your phone">
-            </label>
-          </div>
-          <div class="col-md-6 form-group">
-            <label for="cat name">Cat Name
-            <input type="text" class="form-control" id="cat name" placeholder="Cat Name">
-            </label>
-          </div>
-          <div class="col-sm-2 form-group">
-            <label for="cat age">Cat Age
-            <input type="text" class="form-control" id="cat age" placeholder="months">
-            <label for="cat age"></label>
-            <input type="text" class="form-control" id="cat age" placeholder="year">
-            </label>
-          </div>
-          <div class="col-sm-2 form-group">
-            <label for="Your Phone">Cat Weight
-            <input type="text" class="form-control" id="cat age" placeholder="in lbs, eg 8">
-            </label>
-          </div>
-            <div class="col-sm-2 form-group">
-              <label class="radio-inline">Male
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              </label>
-              <label class="radio-inline">Female
-              <input type="radio" name="inlinRadioOptions" id="inlineRadio2" value="option2">
-              </label>
-            </div>
-          <div class"col-md-6 form-group">
-            <label for="Cat Description">Cat Description</label>
-            <textarea cols="40" rows="8" name= "Cat Description" id="cat description"></textarea>
-          </div>
-            <button type="submit" class="btn btn-default">Submit</button>
         </div>
-      </form>
-    </div>
+        
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="name">Your Name*</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <label for="Email">Email*</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="YourPhone">Your Phone*</label>
+                <input type="text" class="form-control" id="yourPhone" placeholder="your phone">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="catName">Cat Name</label>
+                    <input type="text" class="form-control" id="catName" placeholder="Cat Name">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="catAge">Cat Age</label>
+                    <div class="input-group">
+                        <input type="text" class="width-sm form-control" id="catAge" placeholder="months">
+                        <div class="input-group-addon">Months</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label>&nbsp;</label>
+                  <div class="input-group">
+                      <input type="text" class="width-sm form-control" placeholder="year">
+                      <div class="input-group-addon">Years</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="Your Phone">Cat Weight</label>
+                    <input type="text" class="width-sm form-control" id="cat-age" placeholder="in lbs, eg 8">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group"> 
+                    <label>Cat Gender</label>
+                    <div class="form-group">
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Male
+                      </label>
+                      <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">Female
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class"form-group">
+                    <label for="Cat-Description">Cat Description</label>
+                    <textarea class="form-control" rows="8" name= "Cat Description" id="cat-description"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="action row">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
 
    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

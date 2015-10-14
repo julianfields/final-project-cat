@@ -1,3 +1,6 @@
+@import "app/styles/variables";
+
+
 $icon-font-path: '../fonts/';
 
 // bower:scss
@@ -11,11 +14,116 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
+/*import font stack*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic,700italic,600italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:700,300);
+
+
+/*variable*/
+$default-font: "Open Sans", sans-serif;
+$grey: #f1f2f4;
+$dark-grey: #d9d9d9;
+$charcoal: #454545;
+$dark-blue: #3bbdfb;
+$corner-radius: 4px;
+
+/*silent-classes*/
+@mixin box-style($border-color) {
+  background-color: #fff;
+  border-radius: $corner-radius;
+  border-bottom: 1px solid $border-color;
+}
+
 /* Space out content a bit */
 body {
+  font-family: $default-font;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+/*typography*/
+h2 {
+  color: $charcoal;
+  font-size: 30px;
+  font-weight: normal;
+  padding: 20px;
+}
+
+section {
+  padding: 20px 0;
+  &.grey {
+    background-color: $grey;
+  }
+  form {
+    @include box-style($dark-blue);
+    padding: 20px;
+    input[type="text"], input[type="email"], textarea.form-control {
+      background: $grey;
+      border-radius: 0;
+      border: none;
+      box-shadow: inset 0 0 5px rgba(0,0,0, 0.35);
+      font-size: 13px;
+      resize: none;
+      &.width-sm {
+        width: 90px;
+      }
+    }
+    label, .input-group-addon, .radio-inline {
+      text-transform: uppercase;
+      font-size: 13px;
+      background: #fff;
+      border: none;
+      font-weight: 600;
+    }
+  }
+  .action {
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+  .btn {
+   background-color:$dark-blue;
+   padding: 8px 80px;
+   color: $charcoal;
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 15px;
+   box-shadow: none;
+   border: none;
+  }
+  .btn-primary {
+    background: #00bbfb; /* Old browsers */
+    background: -moz-linear-gradient(top, #00bbfb 0%, #0096cb 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00bbfb), color-stop(100%,#0096cb)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #00bbfb 0%,#0096cb 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #00bbfb 0%,#0096cb 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #00bbfb 0%,#0096cb 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #00bbfb 0%,#0096cb 100%); /* W3C */
+    &:hover, &:focus {
+      background-position: 0;
+      border: none;
+      background: #59bdf8; /* Old browsers */
+      background: -moz-linear-gradient(top, #59bdf8 0%, #4b9fd1 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#59bdf8), color-stop(100%,#4b9fd1)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #59bdf8 0%,#4b9fd1 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #59bdf8 0%,#4b9fd1 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #59bdf8 0%,#4b9fd1 100%); /* IE10+ */
+      background: linear-gradient(to bottom, #59bdf8 0%,#4b9fd1 100%); /* W3C */
+      outline: none  !important;
+    }
+    &:active, &[type="submit"].active {
+      background: #377499; /* Old browsers */
+      background: -moz-linear-gradient(top, #377499 0%, #59bcf6 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#377499), color-stop(100%,#59bcf6)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #377499 0%,#59bcf6 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #377499 0%,#59bcf6 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #377499 0%,#59bcf6 100%); /* IE10+ */
+      background: linear-gradient(to bottom, #377499 0%,#59bcf6 100%); /* W3C */
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,

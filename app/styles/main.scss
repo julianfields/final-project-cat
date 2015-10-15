@@ -96,6 +96,15 @@ section {
     text-align: center;
     margin: 40px 0 20px;
   }
+  .adopt-cat .action {
+    margin: 20px 0;
+    padding: 0;
+    text-align: left;
+    .btn {
+    padding: 8px 40px;
+    display: inline-block;
+    }
+  }
   .btn {
    background-color:$dark-blue;
    padding: 8px 80px;
@@ -138,6 +147,40 @@ section {
       box-shadow: none;
     }
   }
+  .btn-secondary {
+      background: #e5e1e1; /* Old browsers */
+      background: -moz-linear-gradient(top, #e5e1e1 0%, #c2c1c1 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e1e1), color-stop(100%,#c2c1c1)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #e5e1e1 0%,#c2c1c1 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #e5e1e1 0%,#c2c1c1 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #e5e1e1 0%,#c2c1c1 100%); /* IE10+ */
+      background: linear-gradient(to bottom, #e5e1e1 0%,#c2c1c1 100%); /* W3C */
+    &:hover, &:focus {
+      background-position: 0;
+      color: #fff;
+      border: none;
+      background: #e5e1e1; /* Old browsers */
+      background: -moz-linear-gradient(top, #e5e1e1 0%, #c6c6c6 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e1e1), color-stop(100%,#c6c6c6)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #e5e1e1 0%,#c6c6c6 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #e5e1e1 0%,#c6c6c6 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #e5e1e1 0%,#c6c6c6 100%); /* IE10+ */
+      background: linear-gradient(to bottom, #e5e1e1 0%,#c6c6c6 100%); /* W3C */
+      outline: none  !important;
+    }
+    &:active, &[type="submit"].active {
+      color: #fff;
+      background: #a7a6a6; /* Old browsers */
+      background: -moz-linear-gradient(top, #a7a6a6 0%, #dddada 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a7a6a6), color-stop(100%,#dddada)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #a7a6a6 0%,#dddada 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #a7a6a6 0%,#dddada 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #a7a6a6 0%,#dddada 100%); /* IE10+ */
+      background: linear-gradient(to bottom, #a7a6a6 0%,#dddada 100%); /* W3C */
+      outline: none;
+      box-shadow: none;
+    }
+  }
 }
 
 
@@ -173,13 +216,51 @@ section {
   margin: 30px 0;
 }
 
+.page-header {
+  border-bottom: none;
+  h1 {
+  font-size:  60px;
+  color: $charcoal;
+  font-weight: 300;
+  span {
+    color: $dark-blue;
+  }
+  }
+}
+
+nav.navbar {
+  margin: 0;
+  background-color: $grey;
+  box-shadow: none;
+  border-top: 2px solid $dark-grey;
+  a {
+  color: $dark-blue !important;
+  }
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
+  padding: 0;
+  margin: 0;
+  background: transparent url(/images/persian-cat.jpg) center center no-repeat;
+  background-size: cover;
+  height: 400px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
+  }
+  h1 {
+   color: #fff;
+   font-size: 60px;
+   font-weight: bold;
+   margin-top: 100px;
+   text-shadow: 2px 2px 5px rgba(0,0,0,0.35);
+  }
+  p {
+  color: #fff;
+  font-size: 18px;
   }
 }
 

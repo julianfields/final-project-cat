@@ -52,15 +52,17 @@ h2 {
 }
 .cardz{
   min-width: 20%;
-  margin-left: 5%;
+  margin: 2%;
   background-color: white;
 }
 .cardContent {
   padding: 2%;
 }
 .flexboxz {
+  padding: 1%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .imgsize{
   width: 100%;

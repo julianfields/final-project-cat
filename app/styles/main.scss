@@ -54,9 +54,24 @@ h2 {
   min-width: 20%;
   margin: 2%;
   background-color: white;
+  border-bottom: 1px solid $dark-grey;
 }
 .cardContent {
   padding: 2%;
+  h3 {
+  color: $dark-blue;
+  font-family: $default-font;
+  padding: 10px;
+  margin: 0;
+  }
+  ul {
+  list-style-type: none;
+  font-family: $default-font;
+  font-size: 13px;
+  color: $charcoal;
+  font-weight: bold;
+  margin-left: -30px;
+  }
 }
 .flexboxz {
   padding: 1%;

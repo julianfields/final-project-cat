@@ -23,6 +23,7 @@ $icon-font-path: '../fonts/';
 $default-font: "Open Sans", sans-serif;
 $grey: #f1f2f4;
 $dark-grey: #d9d9d9;
+$light-grey: #f7f8fa;
 $charcoal: #454545;
 $dark-blue: #3bbdfb;
 $corner-radius: 4px;
@@ -39,6 +40,7 @@ body {
   font-family: $default-font;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: $light-grey;
 }
 
 /*typography*/
@@ -48,7 +50,23 @@ h2 {
   font-weight: normal;
   padding: 20px;
 }
-
+.cardz{
+  min-width: 20%;
+  margin: 2%;
+  background-color: white;
+}
+.cardContent {
+  padding: 2%;
+}
+.flexboxz {
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.imgsize{
+  width: 100%;
+}
 section {
   padding: 20px 0;
   &.grey {
@@ -281,4 +299,8 @@ nav.navbar {
   .jumbotron {
     border-bottom: 0;
   }
+}
+.flex{
+  display:flex;
+  flex-wrap: wrap;
 }

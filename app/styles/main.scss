@@ -79,6 +79,11 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
+.img-responsive{
+  width: 100%;
+  max-height: 30em;
+  min-height: 20em;
+}
 .imgsize{
   width: 100%;
 }

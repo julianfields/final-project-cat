@@ -27,6 +27,7 @@ $light-grey: #f7f8fa;
 $charcoal: #454545;
 $dark-blue: #3bbdfb;
 $corner-radius: 4px;
+$cornflower-blue: #bae8fe;
 
 /*silent-classes*/
 @mixin box-style($border-color) {
@@ -80,6 +81,12 @@ h2 {
   color: $charcoal;
   }
   }
+}
+.catbox{
+  background-color: $cornflower-blue;
+  height: 15em;
+  width: 24em;
+  margin: 1em;
 }
 .flexboxz {
   padding: 1%;
@@ -258,6 +265,7 @@ section {
 }
 
 /* Custom page footer */
+
 .panel-footer {
   background-color: #000000;
   padding-top: 19px;

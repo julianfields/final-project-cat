@@ -249,7 +249,12 @@ section {
     padding-bottom: 19px;
   }
 }
-
+.hiddenForm {
+  display: none;
+}
+.visible {
+  display: block;
+}
 .sub-footer {
   h3 {
   font-family: $default-font;

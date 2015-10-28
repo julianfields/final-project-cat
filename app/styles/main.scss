@@ -41,7 +41,7 @@ body {
   font-family: $default-font;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: $light-grey;
+  background-color: $grey;
 }
 
 /*typography*/
@@ -130,6 +130,7 @@ section {
         width: 90px;
       }
     }
+
     label, .input-group-addon, .radio-inline {
       text-transform: uppercase;
       font-size: 13px;
@@ -291,6 +292,10 @@ section {
   border-top: 1px solid #e5e5e5;
   position: relative;
   top: 45px;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8364ab2a7c72196537ccf0b62cf589cb4040757b
 }
 
 .container-narrow > hr {

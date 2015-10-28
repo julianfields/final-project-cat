@@ -96,6 +96,7 @@ h2 {
 }
 
 .flexboxz {
+  background-color: #f7f8fa;
   padding: 1%;
   display: flex;
   flex-wrap: wrap;
@@ -106,9 +107,10 @@ h2 {
   max-height: 30em;
   min-height: 20em;
 }
-.imgsize{
+.imgsize {
   width: 100%;
 }
+
 section {
   padding: 20px 0;
   &.grey {
